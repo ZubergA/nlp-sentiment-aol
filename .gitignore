@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Dataset (too large for git — keep locally)
+*.csv
+
+# Node
+node_modules/
+.next/
+.vercel/
+*.tsbuildinfo
+
+# Env files
+.env
+.env.local
+.env.production
+
+# OS
+.DS_Store
+Thumbs.db
+
+
+# Tambah ke .gitignore
+echo "IMDB_Dataset.csv" >> .gitignore
+echo "__pycache__/" >> .gitignore
+echo "*.pyc" >> .gitignore
+echo "venv/" >> .gitignore
