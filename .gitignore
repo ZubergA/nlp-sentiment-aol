@@ -35,3 +35,4 @@ echo "IMDB_Dataset.csv" >> .gitignore
 echo "__pycache__/" >> .gitignore
 echo "*.pyc" >> .gitignore
 echo "venv/" >> .gitignore
+echo "backend/.git" >> .gitignore
