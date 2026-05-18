@@ -1,0 +1,138 @@
+{
+  "best_model": "Logistic Regression",
+  "score_weights": {
+    "accuracy": 0.3,
+    "f1_macro": 0.4,
+    "auc_roc": 0.3
+  },
+  "preprocessing": {
+    "stemmer": "PorterStemmer (NLTK)",
+    "stopwords_library": "NLTK English stopwords",
+    "stopwords_count": 198,
+    "tokenizer": "word_tokenize (NLTK punkt)"
+  },
+  "dataset": {
+    "total_samples": 50000,
+    "positive_samples": 25000,
+    "negative_samples": 25000,
+    "train_samples": 40000,
+    "test_samples": 10000
+  },
+  "best_metrics": {
+    "accuracy": 0.9064,
+    "f1_macro": 0.9064,
+    "auc_roc": 0.9671,
+    "weighted_score": 0.9246,
+    "f1_positive": 0.9073,
+    "f1_negative": 0.9055,
+    "precision_positive": 0.8986,
+    "recall_positive": 0.9162,
+    "precision_negative": 0.9145,
+    "recall_negative": 0.8966,
+    "confusion_matrix": [
+      [
+        4483,
+        517
+      ],
+      [
+        419,
+        4581
+      ]
+    ],
+    "training_time_seconds": 22.9
+  },
+  "all_models": {
+    "Logistic Regression": {
+      "accuracy": 0.9064,
+      "f1_macro": 0.9064,
+      "auc_roc": 0.9671,
+      "weighted_score": 0.9246,
+      "f1_positive": 0.9073,
+      "f1_negative": 0.9055,
+      "precision_positive": 0.8986,
+      "recall_positive": 0.9162,
+      "precision_negative": 0.9145,
+      "recall_negative": 0.8966,
+      "confusion_matrix": [
+        [
+          4483,
+          517
+        ],
+        [
+          419,
+          4581
+        ]
+      ],
+      "training_time_seconds": 22.9
+    },
+    "Naive Bayes": {
+      "accuracy": 0.8814,
+      "f1_macro": 0.8814,
+      "auc_roc": 0.9498,
+      "weighted_score": 0.9019,
+      "f1_positive": 0.8823,
+      "f1_negative": 0.8805,
+      "precision_positive": 0.8758,
+      "recall_positive": 0.8888,
+      "precision_negative": 0.8871,
+      "recall_negative": 0.874,
+      "confusion_matrix": [
+        [
+          4370,
+          630
+        ],
+        [
+          556,
+          4444
+        ]
+      ],
+      "training_time_seconds": 22.0
+    },
+    "SVM (LinearSVC)": {
+      "accuracy": 0.9055,
+      "f1_macro": 0.9055,
+      "auc_roc": 0.9669,
+      "weighted_score": 0.9239,
+      "f1_positive": 0.9061,
+      "f1_negative": 0.9049,
+      "precision_positive": 0.9006,
+      "recall_positive": 0.9116,
+      "precision_negative": 0.9105,
+      "recall_negative": 0.8994,
+      "confusion_matrix": [
+        [
+          4497,
+          503
+        ],
+        [
+          442,
+          4558
+        ]
+      ],
+      "training_time_seconds": 26.5
+    },
+    "Random Forest": {
+      "accuracy": 0.8695,
+      "f1_macro": 0.8695,
+      "auc_roc": 0.942,
+      "weighted_score": 0.8913,
+      "f1_positive": 0.8708,
+      "f1_negative": 0.8681,
+      "precision_positive": 0.862,
+      "recall_positive": 0.8798,
+      "precision_negative": 0.8773,
+      "recall_negative": 0.8592,
+      "confusion_matrix": [
+        [
+          4296,
+          704
+        ],
+        [
+          601,
+          4399
+        ]
+      ],
+      "training_time_seconds": 53.3
+    }
+  }
+}

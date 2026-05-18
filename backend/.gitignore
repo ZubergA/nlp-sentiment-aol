@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Dataset (too large for git — keep locally)
+*.csv
+
+# Node
+node_modules/
+.next/
+.vercel/
+*.tsbuildinfo
+
+# Env files
+.env
+.env.local
+.env.production
+
+# OS
+.DS_Store
+Thumbs.db
+
+
+IMDB_Dataset.csv
+__pycache__/
+*.pyc
+venv/
+.env
+.env.local
