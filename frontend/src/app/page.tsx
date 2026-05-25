@@ -307,22 +307,22 @@ export default function Home() {
     <div className="min-h-screen flex flex-col" style={{ background: 'var(--bg)' }}>
       <header className="border-b border-[var(--border)] px-6 py-5 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-full bg-[var(--gold)] flex items-center justify-center text-[var(--bg)] font-bold text-sm">CS</div>
-          <span className="font-display text-xl font-bold text-[var(--text)] tracking-tight">CineScope</span>
+          <div className="w-8 h-8 rounded-full bg-[var(--gold)] flex items-center justify-center text-[var(--bg)] font-bold text-sm">CV</div>
+          <span className="font-display text-xl font-bold text-[var(--text)] tracking-tight">CineVibes</span>
         </div>
-        <div className="flex items-center gap-2 text-xs font-mono text-[var(--text-dim)]">
+        {/* <div className="flex items-center gap-2 text-xs font-mono text-[var(--text-dim)]">
           <span className="w-2 h-2 rounded-full bg-[var(--green)] animate-pulse inline-block" />
-          {metrics ? metrics.best_model : 'Loading...'} · NER + Sentiment
-        </div>
+          {metrics ? metrics.best_model : 'Loading...'} · Sentiment
+        </div> */}
       </header>
 
       <div className="px-6 pt-10 pb-6 text-center border-b border-[var(--border)]">
-        <p className="text-xs font-mono text-[var(--gold)] tracking-[0.3em] uppercase mb-3">NLP · Kelompok 13</p>
+        <p className="text-xs font-mono text-[var(--gold)] tracking-[0.3em] uppercase mb-3">NLP - Kelompok 13</p>
         <h1 className="font-display text-4xl md:text-5xl font-black text-[var(--text)] leading-tight mb-2">
           Sentiment<br /><span style={{ color: 'var(--gold)' }}>Analysis</span>
         </h1>
         <p className="text-sm text-[var(--text-dim)] max-w-md mx-auto font-mono">
-          Sentiment analysis + Named Entity Recognition · 50,000 IMDB reviews
+          Sentiment analysis - 50,000 IMDB reviews
         </p>
       </div>
 
@@ -356,7 +356,7 @@ export default function Home() {
           <button onClick={handlePredict} disabled={!text.trim() || loading}
             className="w-full py-3.5 rounded-xl font-mono text-sm font-medium tracking-widest uppercase transition-all duration-200 disabled:opacity-40 disabled:cursor-not-allowed"
             style={{ background: 'var(--gold)', color: 'var(--bg)' }}>
-            {loading ? '⏳  Analyzing...' : '▶  Analyze Sentiment + NER'}
+            {loading ? '⏳  Analyzing...' : '▶  Analyze Sentiment'}
           </button>
 
           {error && (
@@ -395,9 +395,8 @@ export default function Home() {
               <h3 className="font-display text-base font-bold text-[var(--text)]">Model Info</h3>
               {[
                 ['Architecture', metrics?.best_model ?? '—'],
-                ['NER Engine',   'spaCy en_core_web_sm'],
+                ['NER Engine',   'spaCy en_core_web_md'],
                 ['Preprocessing','NLTK PorterStemmer'],
-                ['Selection',    '0.3×Acc + 0.4×F1 + 0.3×AUC'],
               ].map(([k, v]) => (
                 <div key={k} className="flex justify-between gap-2 text-xs font-mono border-b border-[var(--surface2)] pb-1.5 last:border-0">
                   <span className="text-[var(--text-dim)]">{k}</span>

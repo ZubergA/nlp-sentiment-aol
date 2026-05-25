@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ini buat css globalny edit sesuka hati aja */
 :root {
   --bg: #0a0a0f;
   --surface: #111118;
@@ -30,7 +31,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Film grain overlay */
 body::before {
   content: '';
   position: fixed;
